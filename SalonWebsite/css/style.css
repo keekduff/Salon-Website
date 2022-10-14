@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap');
+
+
+/* Box Model Hack */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+header {
+  height: 100px;
+  width: 100vw;
+  background-color: aqua;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+nav ul {
+  display: flex;
+
+}
+
+nav ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+.hero-container {
+  height: 800px;
+  width: 100vw;
+  background-image: url("../images/hero-image.jpg");
+  background-size: cover;
+  margin-top: -100px;
+}
+
+.hero-main-text {
+  height: 200px;
+  width: 600px;
+  margin-left: 180px;
+  margin-top: 110px;
+}
+
+.hero-main-text h1 {
+  color: white;
+  font-size: 90px;
+  font-weight: 200;
+}
+
+.hero-p {
+  color: white;
+  word-spacing: 3px;
+  margin-top: 20px;
+}
+
+.btn {
+  background: black;
+  color: white;
+  display: inline-block;
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.twenty-off {
+  height: 270px;
+  width: 250px;
+  background-color: black;
+  margin-left: 180px;
+  margin-top: 200px;
+  padding: 20px 20px;
+
+}
+
+.twenty-off p {
+  color: white;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.twenty-off .btn {
+  background: white;
+  color: black;
+  display: inline-block;
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.twenty-off span {
+  font-size: 40px;
+}
+  
+/* SECTION TWO */
+
+.provide {
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+.provide div {
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.provide h3, p {
+  margin-top: 20px;
+}
+
+.provide p {
+  line-height: 1.7;
+}
+
+
+/* THIRD SECTION */
+
+.momentum {
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  background-color: grey;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.momentum div {
+  width: 35%;
+  margin: 20px;
+}
+
+.momentum h2 {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.momentum p {
+  line-height: 1.7;
+}
+
+.momentum div + div {
+  height: 350px;
+  background-image: url("../images/Home3-Video.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* STYLISTS SECTION */
+
+.stylists {
+  height: 600px;
+  width: 100vw;
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
+
+.stylists .btn {
+  margin-top: -20px;
+  text-align: center;
+  margin-left: 110px;
+  padding: 10px 30px;
+}
+
+.stylists .btn p {
+  line-height: .5;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.stylists .btn p + p {
+  font-size: 12px;
+  font-weight: 200;
+  margin: 20px 0 10px 0;
+}
+
+
+/* OFFER SECTION */
+
+.offer-container {
+  height: 600px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.offer {
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+  background-image: url("../images/Promo-Banner-Image.jpg");
+  background-size: cover;
+}
+
+.offer-text {
+  padding: 100px;
+}
+
+.offer-text p {
+  font-size: 24px;
+}
+
+.offer-text h2 {
+  font-size: 42px;
+  margin-top: 20px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.offer-text span {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+
+/* GALLERY SECTION */
+
+.gallery-section {
+  height: 1300px;
+  width: 100vw;
+  padding: 100px;
+}
+
+.gallery-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.gallery-container {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.left, .middle, .right {
+  width: 33%;
+}
+
+.one, .four, .five {
+  height: 400px;
+}
+
+.two, .three, .six {
+  height: 600px;
+}
+
+.one {
+  background-image: url("../images/Gallery-01-150x150.jpg");
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.two {
+  background-image: url("../images/Gallery-02-150x150.jpg");
+  background-size: cover;
+}
+
+.three {
+  background-image: url("../images/Gallery-03-150x150.jpg");
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.four {
+  background-image: url("../images/Gallery-04-150x150.jpg");
+  background-size: cover;
+}
+
+.five {
+  background-image: url("../images/Gallery-05-150x150.jpg");
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.six {
+  background-image: url("../images/Gallery-06-150x150.jpg");
+  background-size: cover;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
